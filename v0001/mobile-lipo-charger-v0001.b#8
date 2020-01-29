@@ -169,10 +169,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="10.922" x2="82.911" y2="10.922" width="0" layer="20"/>
+<wire x1="82.911" y1="10.922" x2="82.911" y2="119.558" width="0" layer="20"/>
+<wire x1="82.911" y1="119.558" x2="0" y2="119.558" width="0" layer="20"/>
+<wire x1="0" y1="119.558" x2="0" y2="10.922" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="common">
@@ -791,17 +791,17 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="common" package="EP-MSOP8" value="" x="9.017" y="59.309" smashed="yes">
-<attribute name="NAME" x="7.747" y="61.214" size="1.27" layer="25"/>
-<attribute name="VALUE" x="6.731" y="56.007" size="1.27" layer="27"/>
+<element name="U1" library="common" package="EP-MSOP8" value="" x="44.704" y="99.822" smashed="yes">
+<attribute name="NAME" x="43.434" y="101.727" size="1.27" layer="25"/>
+<attribute name="VALUE" x="42.418" y="96.52" size="1.27" layer="27"/>
 </element>
-<element name="C1" library="common" package="0805L3" value="" x="16.002" y="59.309" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.605" y="58.293" size="0.8128" layer="25" rot="R90"/>
-<attribute name="VALUE" x="17.78" y="57.531" size="0.8128" layer="27" rot="R90"/>
+<element name="C1" library="common" package="0805L3" value="" x="59.055" y="99.822" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.658" y="98.806" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="60.833" y="98.044" size="0.8128" layer="27" rot="R90"/>
 </element>
-<element name="C2" library="common" package="0805L3" value="" x="10.033" y="56.388" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.271" y="54.483" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="11.811" y="58.166" size="0.8128" layer="27" rot="R180"/>
+<element name="C2" library="common" package="0805L3" value="" x="45.72" y="96.901" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.958" y="94.996" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="47.498" y="98.679" size="0.8128" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="common" package="TSSOP-RU-16" value="" x="14.732" y="65.786" smashed="yes">
 <attribute name="NAME" x="11.182" y="68.886" size="1.27" layer="25"/>
@@ -863,17 +863,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.891" y="77.851" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="14.859" y="82.423" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="U2" library="common" package="EP-MSOP8" value="" x="20.574" y="59.309" smashed="yes">
-<attribute name="NAME" x="19.304" y="61.214" size="1.27" layer="25"/>
-<attribute name="VALUE" x="18.288" y="56.007" size="1.27" layer="27"/>
+<element name="U2" library="common" package="EP-MSOP8" value="" x="63.627" y="99.822" smashed="yes">
+<attribute name="NAME" x="62.357" y="101.727" size="1.27" layer="25"/>
+<attribute name="VALUE" x="61.341" y="96.52" size="1.27" layer="27"/>
 </element>
-<element name="C16" library="common" package="0805L3" value="" x="4.445" y="59.309" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.048" y="58.293" size="0.8128" layer="25" rot="R90"/>
-<attribute name="VALUE" x="6.223" y="57.531" size="0.8128" layer="27" rot="R90"/>
+<element name="C16" library="common" package="0805L3" value="" x="40.132" y="99.822" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.735" y="98.806" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="41.91" y="98.044" size="0.8128" layer="27" rot="R90"/>
 </element>
-<element name="C17" library="common" package="0805L3" value="" x="21.59" y="56.388" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.574" y="54.483" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="23.368" y="58.166" size="0.8128" layer="27" rot="R180"/>
+<element name="C17" library="common" package="0805L3" value="" x="64.643" y="96.901" smashed="yes" rot="R180">
+<attribute name="NAME" x="63.627" y="94.996" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="66.421" y="98.679" size="0.8128" layer="27" rot="R180"/>
 </element>
 <element name="Q1" library="my_dac_amp" package="PCM2707_V1_SPARKFUN_HC49US" value="" x="11.303" y="85.852" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.811" y="84.709" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -912,9 +912,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="23.622" y="97.155" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="20.828" y="96.012" size="0.8128" layer="27"/>
 </element>
-<element name="BAT1" library="common" package="KEYSTONE1048" value="" x="-20.066" y="43.18" smashed="yes">
-<attribute name="NAME" x="-20.066" y="54.991" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-20.066" y="51.562" size="1.27" layer="27"/>
+<element name="BAT1" library="common" package="KEYSTONE1048" value="" x="61.595" y="55.372" smashed="yes">
+<attribute name="NAME" x="61.595" y="67.183" size="1.27" layer="25"/>
+<attribute name="VALUE" x="61.595" y="63.754" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -957,10 +957,10 @@ design rules under a new name.</description>
 <contactref element="SW1" pad="4"/>
 <contactref element="SW1" pad="3"/>
 <polygon width="0.127" layer="3">
-<vertex x="0.127" y="99.822"/>
-<vertex x="59.69" y="99.822"/>
-<vertex x="59.69" y="30.607"/>
-<vertex x="0.127" y="30.607"/>
+<vertex x="0.127" y="119.507"/>
+<vertex x="82.423" y="119.507"/>
+<vertex x="82.423" y="11.049"/>
+<vertex x="0.127" y="11.049"/>
 </polygon>
 <wire x1="20.535" y1="93.348" x2="20.535" y2="94.977" width="0.3048" layer="1"/>
 <wire x1="20.535" y1="94.977" x2="20.516" y2="94.996" width="0.3048" layer="1"/>
@@ -992,14 +992,14 @@ design rules under a new name.</description>
 <wire x1="11.882" y1="66.111" x2="11.882" y2="66.761" width="0" layer="19" extent="1-1"/>
 <wire x1="11.882" y1="64.161" x2="11.882" y2="66.111" width="0" layer="19" extent="1-1"/>
 <wire x1="11.882" y1="63.511" x2="11.882" y2="64.161" width="0" layer="19" extent="1-1"/>
-<wire x1="9.017" y1="59.309" x2="11.882" y2="63.511" width="0" layer="19" extent="1-1"/>
-<wire x1="7.042" y1="58.984" x2="9.017" y2="59.309" width="0" layer="19" extent="1-1"/>
-<wire x1="4.445" y1="60.259" x2="7.042" y2="58.984" width="0" layer="19" extent="1-1"/>
-<wire x1="9.083" y1="56.388" x2="9.017" y2="59.309" width="0" layer="19" extent="1-1"/>
-<wire x1="16.002" y1="60.259" x2="11.882" y2="63.511" width="0" layer="19" extent="1-1"/>
-<wire x1="18.599" y1="58.984" x2="16.002" y2="60.259" width="0" layer="19" extent="1-1"/>
-<wire x1="20.574" y1="59.309" x2="18.599" y2="58.984" width="0" layer="19" extent="1-1"/>
-<wire x1="20.64" y1="56.388" x2="20.574" y2="59.309" width="0" layer="19" extent="1-1"/>
+<wire x1="44.704" y1="99.822" x2="11.882" y2="63.511" width="0" layer="19" extent="1-1"/>
+<wire x1="42.729" y1="99.497" x2="44.704" y2="99.822" width="0" layer="19" extent="1-1"/>
+<wire x1="40.132" y1="100.772" x2="42.729" y2="99.497" width="0" layer="19" extent="1-1"/>
+<wire x1="44.77" y1="96.901" x2="44.704" y2="99.822" width="0" layer="19" extent="1-1"/>
+<wire x1="59.055" y1="100.772" x2="11.882" y2="63.511" width="0" layer="19" extent="1-1"/>
+<wire x1="61.652" y1="99.497" x2="59.055" y2="100.772" width="0" layer="19" extent="1-1"/>
+<wire x1="63.627" y1="99.822" x2="61.652" y2="99.497" width="0" layer="19" extent="1-1"/>
+<wire x1="63.693" y1="96.901" x2="63.627" y2="99.822" width="0" layer="19" extent="1-1"/>
 <wire x1="5.969" y1="89.904" x2="5.969" y2="81.8" width="0" layer="19" extent="1-1"/>
 <wire x1="31.535" y1="77.848" x2="22.098" y2="82.665" width="0" layer="19" extent="1-16"/>
 <wire x1="31.943" y1="74.93" x2="31.681" y2="76.327" width="0" layer="19" extent="1-1"/>
@@ -1011,31 +1011,31 @@ design rules under a new name.</description>
 <contactref element="U2" pad="4"/>
 <contactref element="C16" pad="1"/>
 <polygon width="0.127" layer="1" thermals="no">
-<vertex x="7.239" y="58.42"/>
-<vertex x="6.604" y="58.42"/>
-<vertex x="6.223" y="58.801"/>
-<vertex x="3.81" y="58.801"/>
-<vertex x="3.81" y="58.039"/>
-<vertex x="7.239" y="58.039"/>
+<vertex x="42.926" y="98.933"/>
+<vertex x="42.291" y="98.933"/>
+<vertex x="41.91" y="99.314"/>
+<vertex x="39.497" y="99.314"/>
+<vertex x="39.497" y="98.552"/>
+<vertex x="42.926" y="98.552"/>
 </polygon>
 <polygon width="0.127" layer="1" thermals="no">
-<vertex x="18.796" y="58.42"/>
-<vertex x="18.161" y="58.42"/>
-<vertex x="17.78" y="58.801"/>
-<vertex x="15.367" y="58.801"/>
-<vertex x="15.367" y="58.039"/>
-<vertex x="18.796" y="58.039"/>
+<vertex x="61.849" y="98.933"/>
+<vertex x="61.214" y="98.933"/>
+<vertex x="60.833" y="99.314"/>
+<vertex x="58.42" y="99.314"/>
+<vertex x="58.42" y="98.552"/>
+<vertex x="61.849" y="98.552"/>
 </polygon>
-<wire x1="7.042" y1="58.334" x2="16.002" y2="58.359" width="0" layer="19" extent="1-1"/>
+<wire x1="42.729" y1="98.847" x2="59.055" y2="98.872" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT1_OUT">
 <contactref element="U1" pad="5"/>
 <contactref element="C2" pad="1"/>
 <polygon width="0.127" layer="1" thermals="no">
-<vertex x="10.541" y="58.42"/>
-<vertex x="10.541" y="55.753"/>
-<vertex x="11.43" y="55.753"/>
-<vertex x="11.43" y="58.42"/>
+<vertex x="46.228" y="98.933"/>
+<vertex x="46.228" y="96.266"/>
+<vertex x="47.117" y="96.266"/>
+<vertex x="47.117" y="98.933"/>
 </polygon>
 </signal>
 <signal name="BATT1_CE">
@@ -1045,10 +1045,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="2"/>
 <contactref element="U$1" pad="5"/>
 <wire x1="7.422" y1="65.461" x2="11.882" y2="65.461" width="0.3048" layer="1"/>
-<wire x1="7.042" y1="59.634" x2="6.66" y2="59.634" width="0.3048" layer="1"/>
-<wire x1="6.66" y1="59.634" x2="6.35" y2="59.944" width="0.3048" layer="1"/>
-<wire x1="6.35" y1="59.944" x2="6.35" y2="64.389" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="64.389" x2="7.422" y2="65.461" width="0.3048" layer="1"/>
+<wire x1="42.729" y1="100.147" x2="6.35" y2="64.389" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT1_CHARGE">
 <contactref element="U1" pad="7"/>
@@ -1189,23 +1187,19 @@ design rules under a new name.</description>
 <contactref element="U2" pad="5"/>
 <contactref element="C17" pad="1"/>
 <polygon width="0.127" layer="1" thermals="no">
-<vertex x="22.86" y="55.753"/>
-<vertex x="22.098" y="55.753"/>
-<vertex x="22.098" y="58.42"/>
-<vertex x="22.86" y="58.42"/>
-<vertex x="22.987" y="58.42"/>
-<vertex x="22.987" y="55.753"/>
+<vertex x="66.04" y="96.266"/>
+<vertex x="65.151" y="96.266"/>
+<vertex x="65.151" y="98.933"/>
+<vertex x="66.04" y="98.933"/>
 </polygon>
 </signal>
 <signal name="BATT2_ISET">
 <contactref element="U2" pad="2"/>
 <contactref element="U$1" pad="9"/>
-<wire x1="18.599" y1="59.634" x2="18.09" y2="59.634" width="0.3048" layer="1"/>
-<wire x1="18.09" y1="59.634" x2="17.907" y2="59.817" width="0.3048" layer="1"/>
-<wire x1="17.907" y1="59.817" x2="17.907" y2="62.484" width="0.3048" layer="1"/>
 <wire x1="17.907" y1="62.484" x2="17.526" y2="62.865" width="0.3048" layer="1"/>
 <wire x1="17.526" y1="62.865" x2="17.526" y2="63.455" width="0.3048" layer="1"/>
 <wire x1="17.526" y1="63.455" x2="17.582" y2="63.511" width="0.3048" layer="1"/>
+<wire x1="17.907" y1="62.484" x2="61.652" y2="100.147" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="11"/>

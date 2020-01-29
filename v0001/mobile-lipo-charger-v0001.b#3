@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
 <layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
@@ -1310,6 +1310,33 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="94"/>
 <contactref element="R4" pad="P$2"/>
 <wire x1="19.809909375" y1="63.584596875" x2="22.72884375" y2="66.588384375" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<via x="44.704" y="100.584" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$7">
+<via x="44.069" y="100.584" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$8">
+<via x="45.339" y="100.584" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$9">
+<via x="44.069" y="99.949" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$10">
+<via x="44.704" y="99.949" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$11">
+<via x="45.339" y="99.949" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$12">
+<via x="44.069" y="99.314" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$13">
+<via x="44.704" y="99.314" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$14">
+<via x="45.339" y="99.314" extent="1-16" drill="0.254"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

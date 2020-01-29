@@ -294,6 +294,36 @@
 <text x="-1.397" y="0.635" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-1.397" y="-1.524" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="KEYSTONE1048">
+<smd name="1" x="-9.555" y="39.33" dx="6.35" dy="7.34" layer="1"/>
+<smd name="4" x="9.555" y="39.33" dx="6.35" dy="7.34" layer="1"/>
+<smd name="2" x="-9.555" y="-39.33" dx="6.35" dy="7.34" layer="1"/>
+<smd name="3" x="9.555" y="-39.33" dx="6.35" dy="7.34" layer="1"/>
+<hole x="0" y="27.44" drill="3.17"/>
+<hole x="0" y="-27.44" drill="3.17"/>
+<hole x="-17.505" y="27.44" drill="3.45"/>
+<hole x="17.505" y="-27.44" drill="3.45"/>
+<hole x="-17.505" y="-35.66" drill="2.39"/>
+<wire x1="-19.89" y1="38.53" x2="-19.89" y2="-38.53" width="0.127" layer="21"/>
+<wire x1="19.89" y1="38.53" x2="19.89" y2="-38.53" width="0.127" layer="21"/>
+<wire x1="-13.1002" y1="38.53" x2="-19.89" y2="38.53" width="0.127" layer="51"/>
+<wire x1="-5.7795" y1="38.53" x2="5.7795" y2="38.53" width="0.127" layer="51"/>
+<wire x1="13.1002" y1="38.53" x2="19.89" y2="38.53" width="0.127" layer="51"/>
+<wire x1="-13.1002" y1="-38.53" x2="-19.89" y2="-38.53" width="0.127" layer="51"/>
+<wire x1="13.1002" y1="-38.53" x2="19.89" y2="-38.53" width="0.127" layer="51"/>
+<wire x1="-5.7795" y1="-38.53" x2="5.7795" y2="-38.53" width="0.127" layer="51"/>
+<wire x1="-13.1002" y1="38.53" x2="-19.89" y2="38.53" width="0.127" layer="21"/>
+<wire x1="-5.7795" y1="38.53" x2="5.7795" y2="38.53" width="0.127" layer="21"/>
+<wire x1="13.1002" y1="38.53" x2="19.89" y2="38.53" width="0.127" layer="21"/>
+<wire x1="13.1002" y1="-38.53" x2="19.89" y2="-38.53" width="0.127" layer="21"/>
+<wire x1="-5.7795" y1="-38.53" x2="5.7795" y2="-38.53" width="0.127" layer="21"/>
+<wire x1="-13.1002" y1="-38.53" x2="-19.89" y2="-38.53" width="0.127" layer="21"/>
+<wire x1="-19.89" y1="38.53" x2="-19.89" y2="-38.53" width="0.127" layer="51"/>
+<wire x1="19.89" y1="38.53" x2="19.89" y2="-38.53" width="0.127" layer="51"/>
+<text x="0" y="5.207" size="1.27" layer="51">Dual 18650</text>
+<text x="0" y="11.811" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="8.382" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="micro-stm_v3">
@@ -881,6 +911,10 @@ design rules under a new name.</description>
 <element name="R4" library="common" package="0603L3" value="100K" x="22.225" y="97.536" smashed="yes">
 <attribute name="NAME" x="23.622" y="97.155" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="20.828" y="96.012" size="0.8128" layer="27"/>
+</element>
+<element name="BAT1" library="common" package="KEYSTONE1048" value="" x="-20.066" y="43.18" smashed="yes">
+<attribute name="NAME" x="-20.066" y="54.991" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-20.066" y="51.562" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>

@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
 <layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
@@ -956,12 +956,6 @@ design rules under a new name.</description>
 <contactref element="R4" pad="P$1"/>
 <contactref element="SW1" pad="4"/>
 <contactref element="SW1" pad="3"/>
-<polygon width="0.127" layer="3">
-<vertex x="0.127" y="119.507"/>
-<vertex x="82.423" y="119.507"/>
-<vertex x="82.423" y="11.049"/>
-<vertex x="0.127" y="11.049"/>
-</polygon>
 <wire x1="24.4966125" y1="64.82061875" x2="23.3447375" y2="63.66874375" width="0.3048" layer="1"/>
 <wire x1="23.3447375" y1="63.66874375" x2="23.3447375" y2="63.641871875" width="0.3048" layer="1"/>
 <wire x1="16.7184375" y1="75.780771875" x2="15.83596875" y2="76.66324375" width="0.3048" layer="1"/>
@@ -1056,6 +1050,7 @@ design rules under a new name.</description>
 <wire x1="20.87056875" y1="62.5239375" x2="23.3447375" y2="63.641871875" width="0" layer="19" extent="1-1"/>
 <wire x1="16.7184375" y1="75.780771875" x2="27.678590625" y2="83.558946875" width="0" layer="19" extent="1-1"/>
 <wire x1="14.421759375" y1="77.610765625" x2="15.449890625" y2="76.66324375" width="0" layer="19" extent="1-1"/>
+<wire x1="59.436" y1="100.137" x2="45.339" y2="100.584" width="0" layer="19" extent="1-1"/>
 <wire x1="29.476" y1="50.292" x2="23.3447375" y2="63.641871875" width="0" layer="19" extent="1-1"/>
 <wire x1="37.58" y1="50.292" x2="29.476" y2="50.292" width="0" layer="19" extent="1-1"/>
 <wire x1="5.392" y1="53.721" x2="20.87056875" y2="62.5239375" width="0" layer="19" extent="1-1"/>
@@ -1302,8 +1297,8 @@ design rules under a new name.</description>
 <signal name="RST">
 <contactref element="IC2" pad="14"/>
 <contactref element="R2" pad="P$2"/>
-<wire x1="7.862" y1="55.626" x2="8.763" y2="55.626" width="0.254" layer="1"/>
-<wire x1="10.795" y1="57.658" x2="31.623" y2="57.658" width="0.254" layer="1"/>
+<wire x1="28.194" y1="55.626" x2="7.862" y2="55.626" width="0.254" layer="1"/>
+<wire x1="30.226" y1="57.658" x2="31.623" y2="57.658" width="0.254" layer="1"/>
 <wire x1="31.623" y1="57.658" x2="32.639" y2="58.674" width="0.254" layer="1"/>
 <wire x1="32.639" y1="61.214" x2="32.512" y2="61.341" width="0.254" layer="1"/>
 <via x="32.512" y="61.341" extent="1-16" drill="0.254"/>
@@ -1312,7 +1307,7 @@ design rules under a new name.</description>
 <via x="34.417" y="61.849" extent="1-16" drill="0.254"/>
 <wire x1="34.417" y1="61.849" x2="34.417" y2="62.484" width="0.254" layer="1"/>
 <wire x1="34.29" y1="62.611" x2="34.417" y2="62.484" width="0.254" layer="1"/>
-<wire x1="8.763" y1="55.626" x2="10.795" y2="57.658" width="0.254" layer="1"/>
+<wire x1="28.194" y1="55.626" x2="30.226" y2="57.658" width="0.254" layer="1"/>
 <wire x1="32.639" y1="58.674" x2="32.639" y2="61.214" width="0.254" layer="1"/>
 <wire x1="31.92123125" y1="69.063259375" x2="34.29" y2="66.694490625" width="0.254" layer="1"/>
 <wire x1="34.29" y1="66.694490625" x2="34.29" y2="62.611" width="0.254" layer="1"/>
