@@ -1943,6 +1943,171 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 </deviceset>
 </devicesets>
 </library>
+<library name="analog-devices" urn="urn:adsk.eagle:library:102">
+<description>&lt;b&gt;Analog Devices Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SO8" urn="urn:adsk.eagle:footprint:30958/1" library_version="5">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt; SOP-8L&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+<package name="MSOP08" urn="urn:adsk.eagle:footprint:3781/1" library_version="5">
+<description>&lt;b&gt;8-Lead micro SO&lt;/b&gt; (RM-8)&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.1524" layer="21"/>
+<wire x1="1.299" y1="1.624" x2="1.624" y2="1.299" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="1.299" x2="-1.301" y2="1.624" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.301" y2="-1.626" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.299" y1="-1.626" x2="1.624" y2="-1.301" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.341" y1="-1.626" x2="1.299" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="-1.301" y1="1.624" x2="1.299" y2="1.624" width="0.1524" layer="21"/>
+<circle x="-1.0456" y="-1.0406" radius="0.2448" width="0.0508" layer="21"/>
+<smd name="8" x="-0.976" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="7" x="-0.326" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="6" x="0.324" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="5" x="0.974" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="4" x="0.974" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="3" x="0.324" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="2" x="-0.326" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="1" x="-0.976" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<text x="-2.032" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.0975" y1="1.65" x2="-0.8537" y2="2.5057" layer="51"/>
+<rectangle x1="-0.4475" y1="1.65" x2="-0.2037" y2="2.5057" layer="51"/>
+<rectangle x1="0.2025" y1="1.65" x2="0.4463" y2="2.5057" layer="51"/>
+<rectangle x1="0.8525" y1="1.65" x2="1.0963" y2="2.5057" layer="51"/>
+<rectangle x1="-1.0975" y1="-2.5069" x2="-0.8537" y2="-1.65" layer="51"/>
+<rectangle x1="-0.4475" y1="-2.5069" x2="-0.2037" y2="-1.65" layer="51"/>
+<rectangle x1="0.2025" y1="-2.5069" x2="0.4463" y2="-1.65" layer="51"/>
+<rectangle x1="0.8525" y1="-2.5069" x2="1.0963" y2="-1.65" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SO8" urn="urn:adsk.eagle:package:30987/2" type="model" library_version="5">
+<description>SMALL OUTLINE INTEGRATED CIRCUIT SOP-8L
+Source: http://www.diodes.com/datasheets/ds31262.pdf</description>
+<packageinstances>
+<packageinstance name="SO8"/>
+</packageinstances>
+</package3d>
+<package3d name="MSOP08" urn="urn:adsk.eagle:package:3936/1" type="box" library_version="5">
+<description>8-Lead micro SO (RM-8)
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<packageinstances>
+<packageinstance name="MSOP08"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="OP_OFFSET+-VS" urn="urn:adsk.eagle:symbol:3848/1" library_version="5">
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.842" x2="0" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-5.842" width="0.1524" layer="94"/>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.778" y="1.778" size="1.27" layer="96">+</text>
+<text x="-1.524" y="-2.794" size="1.27" layer="96">-</text>
+<text x="0.762" y="3.937" size="1.016" layer="96" rot="MR0">+VS</text>
+<text x="0.762" y="-3.937" size="1.016" layer="96" rot="R180">-VS</text>
+<text x="5.588" y="-2.159" size="1.016" layer="96" rot="R270">OFF</text>
+<text x="5.461" y="2.032" size="1.016" layer="96" rot="MR90">OFF</text>
+<pin name="IN+" x="-5.08" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN-" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="-VS" x="0" y="-10.16" visible="pad" length="short" direction="in" rot="R90"/>
+<pin name="+VS" x="0" y="10.16" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="OFF@1" x="5.08" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="OFF@2" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AD8610" urn="urn:adsk.eagle:component:4059/4" prefix="IC" library_version="5">
+<description>&lt;b&gt;Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers&lt;/b&gt;&lt;p&gt;
+Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf</description>
+<gates>
+<gate name="G$1" symbol="OP_OFFSET+-VS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="R" package="SO8">
+<connects>
+<connect gate="G$1" pin="+VS" pad="7"/>
+<connect gate="G$1" pin="-VS" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OFF@1" pad="1"/>
+<connect gate="G$1" pin="OFF@2" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30987/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ALTERA CORPORATION" constant="no"/>
+<attribute name="MPN" value="AD8610BRZ" constant="no"/>
+<attribute name="OC_FARNELL" value="8621578" constant="no"/>
+<attribute name="OC_NEWARK" value="59K6944" constant="no"/>
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MR" package="MSOP08">
+<connects>
+<connect gate="G$1" pin="+VS" pad="7"/>
+<connect gate="G$1" pin="-VS" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OFF@1" pad="1"/>
+<connect gate="G$1" pin="OFF@2" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3936/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ALTERA CORPORATION" constant="no"/>
+<attribute name="MPN" value="AD8610ARMZ-REEL" constant="no"/>
+<attribute name="OC_FARNELL" value="1424175" constant="no"/>
+<attribute name="OC_NEWARK" value="59K6939" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2009,6 +2174,16 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="BAT1" library="common" deviceset="KEYSTONE1048" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R5" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R6" library="common" deviceset="RES" device="0603L3" value="5.49k"/>
+<part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R7" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R8" library="common" deviceset="RES" device="0603L3" value="5.49k"/>
+<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="IC1" library="analog-devices" library_urn="urn:adsk.eagle:library:102" deviceset="AD8610" device="MR" package3d_urn="urn:adsk.eagle:package:3936/1"/>
+<part name="IC3" library="analog-devices" library_urn="urn:adsk.eagle:library:102" deviceset="AD8610" device="MR" package3d_urn="urn:adsk.eagle:package:3936/1"/>
+<part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2808,6 +2983,167 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <pinref part="IC2" gate="MCU" pin="PA7"/>
 <wire x1="68.58" y1="-91.44" x2="68.58" y2="-76.2" width="0.1524" layer="91"/>
 <label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA1"/>
+<wire x1="53.34" y1="-91.44" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
+<label x="53.34" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT2_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA2"/>
+<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>ADC Buffer</description>
+<plain>
+</plain>
+<instances>
+<instance part="R5" gate="G$1" x="68.58" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="76.2" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="76.2" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="68.58" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="66.04" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="66.04" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND23" gate="1" x="68.58" y="60.96" smashed="yes">
+<attribute name="VALUE" x="66.04" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="68.58" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="22.86" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="22.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R8" gate="G$1" x="68.58" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="12.7" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="12.7" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND24" gate="1" x="68.58" y="7.62" smashed="yes">
+<attribute name="VALUE" x="66.04" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="G$1" x="104.14" y="71.12" smashed="yes">
+<attribute name="NAME" x="111.76" y="73.66" size="1.778" layer="95"/>
+<attribute name="VALUE" x="111.76" y="67.31" size="1.778" layer="96"/>
+</instance>
+<instance part="IC3" gate="G$1" x="104.14" y="17.78" smashed="yes">
+<attribute name="NAME" x="111.76" y="20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="111.76" y="13.97" size="1.778" layer="96"/>
+</instance>
+<instance part="GND25" gate="1" x="104.14" y="50.8" smashed="yes">
+<attribute name="VALUE" x="101.6" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="GND26" gate="1" x="104.14" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="101.6" y="-5.08" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="BATT1_OUT" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="81.28" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<label x="71.12" y="86.36" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ADC_BUFF1" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="73.66" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<junction x="68.58" y="73.66"/>
+<label x="73.66" y="71.12" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="IN+"/>
+<wire x1="99.06" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="66.04" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="68.58" y1="10.16" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="-VS"/>
+<wire x1="104.14" y1="60.96" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="-VS"/>
+<wire x1="104.14" y1="7.62" x2="104.14" y2="0" width="0.1524" layer="91"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="ADC_BUFF2" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="17.78" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="20.32" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
+<junction x="68.58" y="20.32"/>
+<label x="73.66" y="17.78" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="IN+"/>
+<wire x1="99.06" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BATT2_OUT" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="27.94" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<label x="71.12" y="33.02" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT2_V" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="OUT"/>
+<wire x1="114.3" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="17.78" x2="127" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="127" y1="2.54" x2="96.52" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="2.54" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="IN-"/>
+<wire x1="96.52" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<junction x="127" y="17.78"/>
+<label x="129.54" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="114.3" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="71.12" x2="127" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="55.88" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IN-"/>
+<wire x1="96.52" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<junction x="127" y="71.12"/>
+<label x="129.54" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="+VS"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="+VS"/>
+<wire x1="104.14" y1="91.44" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

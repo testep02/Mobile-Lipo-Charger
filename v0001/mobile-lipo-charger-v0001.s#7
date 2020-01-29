@@ -1893,12 +1893,12 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="common" deviceset="AD5122" device="BRUZ10"/>
 <part name="IC2" library="micro-stm_v3" deviceset="STM32F401V*T" device="" technology="B"/>
-<part name="C3" library="common" deviceset="CAP" device="0603L3" value="100n"/>
-<part name="C4" library="common" deviceset="CAP" device="0603L3" value="100n"/>
-<part name="C5" library="common" deviceset="CAP" device="0603L3" value="100n"/>
-<part name="C6" library="common" deviceset="CAP" device="0603L3" value="100n"/>
-<part name="C7" library="common" deviceset="CAP" device="0603L3" value="100n"/>
-<part name="C8" library="common" deviceset="CAP" device="0603L3" value="100n"/>
+<part name="C3" library="common" deviceset="CAP" device="0402L3" value="100n"/>
+<part name="C4" library="common" deviceset="CAP" device="0402L3" value="100n"/>
+<part name="C5" library="common" deviceset="CAP" device="0402L3" value="100n"/>
+<part name="C6" library="common" deviceset="CAP" device="0402L3" value="100n"/>
+<part name="C7" library="common" deviceset="CAP" device="0402L3" value="100n"/>
+<part name="C8" library="common" deviceset="CAP" device="0402L3" value="100n"/>
 <part name="C9" library="common" deviceset="CAP" device="0805L3" value="4.7u"/>
 <part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C10" library="common" deviceset="CAP" device="0603L3" value="2.2u"/>
@@ -1906,12 +1906,12 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C12" library="common" deviceset="CAP" device="0603L3" value="1u"/>
-<part name="C13" library="common" deviceset="CAP" device="0603L3" value="100n"/>
+<part name="C13" library="common" deviceset="CAP" device="0402L3" value="100n"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C14" library="common" deviceset="CAP" device="0603L3" value="1u"/>
-<part name="C15" library="common" deviceset="CAP" device="0603L3" value="100n"/>
+<part name="C15" library="common" deviceset="CAP" device="0402L3" value="100n"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
@@ -1933,9 +1933,9 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <part name="R1" library="common" deviceset="RES" device="0603L3" value="1M"/>
 <part name="SW1" library="Seeed-Switch" library_urn="urn:adsk.eagle:library:476" deviceset="SMD-BUTTON-TOP-DHT-4235A(4P-4.2X3.2MM)" device="" package3d_urn="urn:adsk.eagle:package:32986/1" value="DHT-4235A"/>
 <part name="R2" library="common" deviceset="RES" device="0603L3" value="100R"/>
-<part name="R3" library="common" deviceset="RES" device="0603L3" value="100R"/>
+<part name="R3" library="common" deviceset="RES" device="0603L3" value="10K"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
-<part name="C20" library="common" deviceset="CAP" device="0603L3" value="100n"/>
+<part name="C20" library="common" deviceset="CAP" device="0402L3" value="100n"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R4" library="common" deviceset="RES" device="0603L3" value="100K"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2343,9 +2343,9 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <attribute name="NAME" x="17.78" y="-16.256" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="-20.828" size="1.778" layer="96"/>
 </instance>
-<instance part="SW1" gate="G$1" x="-2.54" y="-73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="-7.62" y="-78.74" size="1.27" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="3.81" y="-78.74" size="1.27" layer="96" ratio="10" rot="R90"/>
+<instance part="SW1" gate="G$1" x="2.54" y="-73.66" smashed="yes">
+<attribute name="NAME" x="-2.54" y="-68.58" size="1.27" layer="95" ratio="10"/>
+<attribute name="VALUE" x="-2.54" y="-80.01" size="1.27" layer="96" ratio="10"/>
 </instance>
 <instance part="R2" gate="G$1" x="33.02" y="-50.8" smashed="yes">
 <attribute name="NAME" x="30.48" y="-49.276" size="1.778" layer="95"/>
@@ -2473,36 +2473,40 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="-76.2" x2="-15.24" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="A0"/>
-<wire x1="-15.24" y1="-83.82" x2="-5.08" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-83.82" x2="-5.08" y2="-82.55" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="B0"/>
-<wire x1="-5.08" y1="-83.82" x2="0" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="0" y1="-83.82" x2="0" y2="-82.55" width="0.1524" layer="91"/>
-<junction x="-5.08" y="-83.82"/>
+<wire x1="-15.24" y1="-83.82" x2="-7.62" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="-7.62" y1="-83.82" x2="12.7" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-86.36" x2="-15.24" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="-15.24" y="-83.82"/>
+<wire x1="12.7" y1="-83.82" x2="12.7" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="B1"/>
+<wire x1="12.7" y1="-76.2" x2="11.43" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="B0"/>
+<wire x1="-7.62" y1="-83.82" x2="-7.62" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-76.2" x2="-6.35" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-83.82"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="VCAP2" class="0">
 <segment>
 <pinref part="IC2" gate="MCU" pin="VCAP2"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="-58.42" x2="30.48" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-58.42" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
+<label x="33.02" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="VCAP1" class="0">
 <segment>
 <pinref part="IC2" gate="MCU" pin="VCAP1"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="-60.96" x2="38.1" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-60.96" x2="38.1" y2="-63.5" width="0.1524" layer="91"/>
+<label x="33.02" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -2635,20 +2639,22 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="-50.8" x2="22.86" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-50.8" x2="22.86" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-63.5" x2="0" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="A1"/>
-<wire x1="0" y1="-63.5" x2="-5.08" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-63.5" x2="-5.08" y2="-64.77" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="B1"/>
-<wire x1="0" y1="-64.77" x2="0" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="0" y="-63.5"/>
-<wire x1="-5.08" y1="-63.5" x2="-15.24" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="-5.08" y="-63.5"/>
+<wire x1="22.86" y1="-63.5" x2="12.7" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="-63.5" x2="-7.62" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-63.5" x2="-15.24" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-63.5" x2="-17.78" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-68.58" x2="-15.24" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-15.24" y="-63.5"/>
+<pinref part="SW1" gate="G$1" pin="A0"/>
+<wire x1="-7.62" y1="-63.5" x2="-7.62" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-71.12" x2="-6.35" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-63.5"/>
+<pinref part="SW1" gate="G$1" pin="A1"/>
+<wire x1="12.7" y1="-63.5" x2="12.7" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-71.12" x2="11.43" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="12.7" y="-63.5"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -2661,6 +2667,27 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <wire x1="25.4" y1="-66.04" x2="20.32" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-66.04" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="I_POT_SCLK" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA5"/>
+<wire x1="63.5" y1="-76.2" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
+<label x="63.5" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="I_POT_SDO" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA6"/>
+<wire x1="66.04" y1="-91.44" x2="66.04" y2="-76.2" width="0.1524" layer="91"/>
+<label x="66.04" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="I_POT_SDI" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA7"/>
+<wire x1="68.58" y1="-91.44" x2="68.58" y2="-76.2" width="0.1524" layer="91"/>
+<label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
