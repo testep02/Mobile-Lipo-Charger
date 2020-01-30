@@ -2009,6 +2009,9 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="BAT1" library="common" deviceset="KEYSTONE1048" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R5" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R6" library="common" deviceset="RES" device="0603L3" value="5.49k"/>
+<part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2808,6 +2811,67 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <pinref part="IC2" gate="MCU" pin="PA7"/>
 <wire x1="68.58" y1="-91.44" x2="68.58" y2="-76.2" width="0.1524" layer="91"/>
 <label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA1"/>
+<wire x1="53.34" y1="-91.44" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
+<label x="53.34" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT2_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA2"/>
+<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>ADC Buffer</description>
+<plain>
+</plain>
+<instances>
+<instance part="R5" gate="G$1" x="68.58" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="66.04" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="66.04" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="68.58" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.056" y="55.88" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="71.628" y="55.88" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND23" gate="1" x="68.58" y="50.8" smashed="yes">
+<attribute name="VALUE" x="66.04" y="48.26" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="BATT1_OUT" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<label x="71.12" y="76.2" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ADC_BUFF1" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="66.04" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<junction x="68.58" y="63.5"/>
+<label x="73.66" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="55.88" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
 </nets>

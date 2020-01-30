@@ -3272,6 +3272,20 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+<net name="BATT2_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB0"/>
+<wire x1="106.68" y1="-60.96" x2="96.52" y2="-60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="-60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB1"/>
+<wire x1="106.68" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
+<label x="99.06" y="-58.42" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
