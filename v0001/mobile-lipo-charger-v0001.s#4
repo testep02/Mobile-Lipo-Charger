@@ -2401,6 +2401,17 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 </parts>
 <sheets>
 <sheet>
+<description>MCU PSU</description>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
 <description>BATT TRAY</description>
 <plain>
 </plain>
@@ -3234,18 +3245,11 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="BATT1_V" class="0">
+<net name="BATT2_V" class="0">
 <segment>
 <pinref part="IC2" gate="MCU" pin="PA1"/>
 <wire x1="53.34" y1="-91.44" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
 <label x="53.34" y="-93.98" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="BATT2_V" class="0">
-<segment>
-<pinref part="IC2" gate="MCU" pin="PA2"/>
-<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
-<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TMS_SWDIO" class="0">
@@ -3270,6 +3274,27 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <pinref part="IC2" gate="MCU" pin="PA14"/>
 <wire x1="86.36" y1="-91.44" x2="86.36" y2="-76.2" width="0.1524" layer="91"/>
 <label x="86.36" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA2"/>
+<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT2_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB0"/>
+<wire x1="106.68" y1="-60.96" x2="96.52" y2="-60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="-60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB1"/>
+<wire x1="106.68" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
+<label x="99.06" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

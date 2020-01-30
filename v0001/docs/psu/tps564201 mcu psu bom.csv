@@ -1,0 +1,8 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cbst,Kemet,C0603C104Z3VACTU,1,0.01,4.68,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 25 V  ESR: 1 mΩ  Package: 0603  
+Cout,MuRata,GRM188R60J226MEA0D,3,0.05,4.68,Cap: 22 µF  Total Derated Cap: 24 µF  VDC: 6.3 V  ESR: 1 mΩ  Package: 0603  
+Rfbb,Yageo,RC0201FR-0710KL,1,0.01,2.08,Resistance: 10 kΩ  Tolerance: 1.0%  Power: 50 mW  
+L1,TDK,VLP8040T-2R2N,1,0.22,113.42,L: 2.2 µH  DCR: 15 mΩ  IDC: 6.7 A  
+U1,Texas Instruments,TPS564201DDCR,1,0.4,10.47,
+Cin,MuRata,GRM31CR61E106KA12L,2,0.12,10.92,Cap: 10 µF  Total Derated Cap: 7.2 µF  VDC: 25 V  ESR: 4.51 mΩ  Package: 1206  
+Rfbt,Vishay-Dale,CRCW040233K2FKED,1,0.01,3,Resistance: 33.2 kΩ  Tolerance: 1.0%  Power: 63 mW  

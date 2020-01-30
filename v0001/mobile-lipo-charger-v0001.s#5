@@ -3234,18 +3234,11 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="BATT1_V" class="0">
+<net name="BATT2_V" class="0">
 <segment>
 <pinref part="IC2" gate="MCU" pin="PA1"/>
 <wire x1="53.34" y1="-91.44" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
 <label x="53.34" y="-93.98" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="BATT2_V" class="0">
-<segment>
-<pinref part="IC2" gate="MCU" pin="PA2"/>
-<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
-<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TMS_SWDIO" class="0">
@@ -3254,12 +3247,43 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <wire x1="-66.04" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-60.96" y="-7.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA13"/>
+<wire x1="83.82" y1="-91.44" x2="83.82" y2="-76.2" width="0.1524" layer="91"/>
+<label x="83.82" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="TCK_SWCLK" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="-48.26" y1="-10.16" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-60.96" y="-10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA14"/>
+<wire x1="86.36" y1="-91.44" x2="86.36" y2="-76.2" width="0.1524" layer="91"/>
+<label x="86.36" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PA2"/>
+<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
+<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BATT2_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB0"/>
+<wire x1="106.68" y1="-60.96" x2="96.52" y2="-60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="-60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PB1"/>
+<wire x1="106.68" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
+<label x="99.06" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -3409,6 +3433,16 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <wire x1="104.14" y1="91.44" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
