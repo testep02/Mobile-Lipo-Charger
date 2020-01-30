@@ -2401,6 +2401,17 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 </parts>
 <sheets>
 <sheet>
+<description>MCU PSU</description>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
 <description>BATT TRAY</description>
 <plain>
 </plain>
@@ -3433,16 +3444,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <wire x1="104.14" y1="91.44" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
