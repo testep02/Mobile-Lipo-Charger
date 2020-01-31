@@ -666,6 +666,18 @@
 <text x="-4.5" y="6.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5" y="-8" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="6X6">
+<smd name="1" x="-2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
+<smd name="2" x="2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
+<text x="-3" y="3.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.8" size="1.27" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIO5158">
@@ -1165,6 +1177,15 @@ to 125°C junction temperature.</description>
 </technologies>
 </device>
 <device name="10X10" package="10X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6X6" package="6X6">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2575,7 +2596,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="common" deviceset="AD5122" device="BRUZ10"/>
+<part name="U$1" library="common" deviceset="AD5122" device="BRUZ10">
+<attribute name="DATASHEET" value="https://www.mouser.com/datasheet/2/609/AD5122_5142-1501502.pdf"/>
+<attribute name="MANUFACTURER" value="Analog Devices"/>
+<attribute name="PART-NUM" value="584-AD5122BRUZ10"/>
+<attribute name="VENDOR" value="Mouser"/>
+</part>
 <part name="IC2" library="micro-stm_v3" deviceset="STM32F401V*T" device="" override_package3d_urn="urn:adsk.eagle:package:16668980/2" override_package_urn="urn:adsk.eagle:footprint:16668981/1" technology="B"/>
 <part name="C3" library="common" deviceset="CAP" device="0402L3" value="100n"/>
 <part name="C4" library="common" deviceset="CAP" device="0402L3" value="100n"/>
@@ -2645,7 +2671,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="C22" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="C23" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH"/>
+<part name="L1" library="common" deviceset="INDUCTOR" device="6X6" value="2.2uH">
+<attribute name="DATASHEET" value="https://www.mouser.com/datasheet/2/400/nductor_commercial_power_vls6045ex_en-776394.pdf"/>
+<attribute name="MANUFACTURER" value="TDK"/>
+<attribute name="PART-NUM" value="810-VLS6045EX-2R2N"/>
+<attribute name="VENDOR" value="Mouser"/>
+</part>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="C24" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 <part name="C25" library="common" deviceset="CAP" device="0603L3" value="22u"/>
@@ -2657,7 +2688,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="C28" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="C29" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L2" library="common" deviceset="INDUCTOR" device="10X10" value="3.3uH"/>
+<part name="L2" library="common" deviceset="INDUCTOR" device="6X6" value="3.3uH">
+<attribute name="DATASHEET" value="https://www.mouser.com/datasheet/2/400/nductor_commercial_power_vls6045ex_en-776394.pdf"/>
+<attribute name="MANUFACTURER" value="TDK"/>
+<attribute name="PART-NUM" value="810-VLS6045EX-3R3N"/>
+<attribute name="VENDOR" value="Mouser"/>
+</part>
 <part name="C30" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 <part name="C31" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 </parts>
@@ -2697,6 +2733,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="L1" gate="G$1" x="38.1" y="5.08" smashed="yes">
 <attribute name="NAME" x="35.56" y="6.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="1.524" size="1.778" layer="96"/>
+<attribute name="MANUFACTURER" x="38.1" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="PART-NUM" x="38.1" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="38.1" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="DATASHEET" x="38.1" y="5.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY5" gate="VDD" x="45.72" y="7.62" smashed="yes">
 <attribute name="VALUE" x="45.72" y="10.414" size="1.778" layer="96" align="bottom-center"/>
@@ -2869,6 +2909,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="L2" gate="G$1" x="99.06" y="53.34" smashed="yes">
 <attribute name="NAME" x="96.52" y="54.61" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.52" y="49.784" size="1.778" layer="96"/>
+<attribute name="MANUFACTURER" x="99.06" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="PART-NUM" x="99.06" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="99.06" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="DATASHEET" x="99.06" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C30" gate="G$1" x="116.84" y="48.26" smashed="yes">
 <attribute name="NAME" x="117.856" y="48.768" size="1.778" layer="95"/>
@@ -3234,7 +3278,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DATASHEET" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="PART-NUM" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="0" y="0" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND15" gate="1" x="45.72" y="2.54" smashed="yes">
 <attribute name="VALUE" x="43.18" y="0" size="1.778" layer="96"/>
 </instance>
