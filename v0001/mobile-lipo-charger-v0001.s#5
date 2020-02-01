@@ -3710,6 +3710,32 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <label x="99.06" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="BATT1_DONE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD8"/>
+<wire x1="96.52" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="99.06" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CHARGE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD9"/>
+<wire x1="106.68" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<label x="99.06" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD10"/>
+<wire x1="106.68" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD11"/>
+<wire x1="106.68" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

@@ -2646,6 +2646,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="C23" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH"/>
+<<<<<<< HEAD
+=======
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </parts>
 <sheets>
 <sheet>
@@ -2684,6 +2688,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <attribute name="NAME" x="35.56" y="6.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="1.524" size="1.778" layer="96"/>
 </instance>
+<<<<<<< HEAD
+=======
+<instance part="SUPPLY5" gate="VDD" x="45.72" y="7.62" smashed="yes">
+<attribute name="VALUE" x="45.72" y="10.414" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </instances>
 <busses>
 </busses>
@@ -2769,12 +2779,22 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <junction x="2.54" y="-15.24"/>
 </segment>
 </net>
+<<<<<<< HEAD
 <net name="N$14" class="0">
+=======
+<net name="VDD" class="0">
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="5.08" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<<<<<<< HEAD
+=======
+<pinref part="SUPPLY5" gate="VDD" pin="VDD"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<junction x="45.72" y="5.08"/>
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </segment>
 </net>
 </nets>
