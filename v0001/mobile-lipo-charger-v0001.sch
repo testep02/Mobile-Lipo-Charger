@@ -2660,6 +2660,14 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="L2" library="common" deviceset="INDUCTOR" device="10X10" value="3.3uH"/>
 <part name="C30" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 <part name="C31" library="common" deviceset="CAP" device="0603L3" value="22u"/>
+<part name="R13" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R14" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+<part name="R15" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R16" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3047,22 +3055,36 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="U1" gate="G$1" x="63.5" y="45.72" smashed="yes">
 <attribute name="NAME" x="53.34" y="25.4" size="1.27" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="25.4" y="63.5" smashed="yes">
-<attribute name="NAME" x="26.416" y="64.008" size="1.778" layer="95"/>
-<attribute name="VALUE" x="26.416" y="58.674" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="45.72" y="63.5" smashed="yes">
+<attribute name="NAME" x="46.736" y="64.008" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.736" y="58.674" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="91.44" y="45.72" smashed="yes">
 <attribute name="NAME" x="92.456" y="46.228" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.456" y="40.894" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="25.4" y="55.88" smashed="yes">
-<attribute name="VALUE" x="22.86" y="53.34" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="45.72" y="55.88" smashed="yes">
+<attribute name="VALUE" x="43.18" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="91.44" y="38.1" smashed="yes">
 <attribute name="VALUE" x="88.9" y="35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="63.5" y="20.32" smashed="yes">
 <attribute name="VALUE" x="60.96" y="17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="R13" gate="G$1" x="33.02" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.496" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="36.068" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R14" gate="G$1" x="25.4" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.876" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.448" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY6" gate="VDD" x="25.4" y="58.42" smashed="yes">
+<attribute name="VALUE" x="25.4" y="61.214" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY7" gate="VDD" x="33.02" y="58.42" smashed="yes">
+<attribute name="VALUE" x="33.02" y="61.214" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -3109,27 +3131,43 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <net name="BATT1_CHARGE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="#CHARGE"/>
-<wire x1="38.1" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
 <label x="33.02" y="45.72" size="1.778" layer="95"/>
+<wire x1="48.26" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="48.26" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT1_DONE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="#DONE"/>
-<wire x1="38.1" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <label x="33.02" y="40.64" size="1.778" layer="95"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="43.18" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_CHARGER" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VIN"/>
-<wire x1="20.32" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="68.58" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<junction x="25.4" y="68.58"/>
-<label x="35.56" y="66.04" size="1.778" layer="95"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<junction x="45.72" y="68.58"/>
+<label x="48.26" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="SUPPLY6" gate="VDD" pin="VDD"/>
+<wire x1="25.4" y1="58.42" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="SUPPLY7" gate="VDD" pin="VDD"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -3142,22 +3180,36 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="U2" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="NAME" x="-10.16" y="-20.32" size="1.27" layer="95"/>
 </instance>
-<instance part="C16" gate="G$1" x="-38.1" y="17.78" smashed="yes">
-<attribute name="NAME" x="-37.084" y="18.288" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-37.084" y="12.954" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="-17.78" y="17.78" smashed="yes">
+<attribute name="NAME" x="-16.764" y="18.288" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-16.764" y="12.954" size="1.778" layer="96"/>
 </instance>
 <instance part="C17" gate="G$1" x="27.94" y="0" smashed="yes">
 <attribute name="NAME" x="28.956" y="0.508" size="1.778" layer="95"/>
 <attribute name="VALUE" x="28.956" y="-4.826" size="1.778" layer="96"/>
 </instance>
-<instance part="GND12" gate="1" x="-38.1" y="10.16" smashed="yes">
-<attribute name="VALUE" x="-40.64" y="7.62" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="-17.78" y="10.16" smashed="yes">
+<attribute name="VALUE" x="-20.32" y="7.62" size="1.778" layer="96"/>
 </instance>
 <instance part="GND13" gate="1" x="27.94" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="GND14" gate="1" x="0" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="-2.54" y="-27.94" size="1.778" layer="96"/>
+</instance>
+<instance part="R15" gate="G$1" x="-30.48" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="-32.004" y="5.08" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-27.432" y="5.08" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R16" gate="G$1" x="-38.1" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.624" y="5.08" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-35.052" y="5.08" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY8" gate="VDD" x="-38.1" y="12.7" smashed="yes">
+<attribute name="VALUE" x="-38.1" y="15.494" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY9" gate="VDD" x="-30.48" y="12.7" smashed="yes">
+<attribute name="VALUE" x="-30.48" y="15.494" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -3180,15 +3232,19 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <net name="BATT2_CHARGE" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="#CHARGE"/>
-<wire x1="-25.4" y1="2.54" x2="-15.24" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="2.54" x2="-15.24" y2="2.54" width="0.1524" layer="91"/>
 <label x="-30.48" y="0" size="1.778" layer="95"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="2.54" x2="-30.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT2_DONE" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="#DONE"/>
-<wire x1="-25.4" y1="-2.54" x2="-15.24" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-30.48" y="-5.08" size="1.778" layer="95"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-2.54" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT2_CE" class="0">
@@ -3218,13 +3274,25 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <net name="VIN_CHARGER" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="VIN"/>
-<wire x1="-43.18" y1="22.86" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="0" y1="22.86" x2="0" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="20.32" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-38.1" y="22.86"/>
-<label x="-27.94" y="20.32" size="1.778" layer="95"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-17.78" y="22.86"/>
+<label x="-15.24" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="SUPPLY9" gate="VDD" pin="VDD"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="12.7" x2="-30.48" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="VDD" pin="VDD"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="12.7" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

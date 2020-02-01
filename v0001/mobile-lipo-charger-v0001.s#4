@@ -2646,6 +2646,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="C23" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH"/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+<part name="C24" library="common" deviceset="CAP" device="0603L3" value="22u"/>
+<part name="C25" library="common" deviceset="CAP" device="0603L3" value="22u"/>
+<part name="C26" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 </parts>
 <sheets>
 <sheet>
@@ -2683,6 +2687,21 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="L1" gate="G$1" x="38.1" y="5.08" smashed="yes">
 <attribute name="NAME" x="35.56" y="6.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="1.524" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="VDD" x="45.72" y="7.62" smashed="yes">
+<attribute name="VALUE" x="45.72" y="10.414" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C24" gate="G$1" x="55.88" y="0" smashed="yes">
+<attribute name="NAME" x="56.896" y="0.508" size="1.778" layer="95"/>
+<attribute name="VALUE" x="56.896" y="-4.826" size="1.778" layer="96"/>
+</instance>
+<instance part="C25" gate="G$1" x="63.5" y="0" smashed="yes">
+<attribute name="NAME" x="64.516" y="0.508" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.516" y="-4.826" size="1.778" layer="96"/>
+</instance>
+<instance part="C26" gate="G$1" x="71.12" y="0" smashed="yes">
+<attribute name="NAME" x="72.136" y="0.508" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.136" y="-4.826" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2767,14 +2786,40 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="2.54" y1="-17.78" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="2.54" y="-15.24"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-15.24" x2="55.88" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="45.72" y="-15.24"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="-15.24" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-15.24" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="55.88" y="-15.24"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="-15.24" x2="71.12" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-15.24" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="63.5" y="-15.24"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="VDD" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="5.08" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="VDD" pin="VDD"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<junction x="45.72" y="5.08"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="5.08" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="5.08" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="5.08" x2="63.5" y2="2.54" width="0.1524" layer="91"/>
+<junction x="55.88" y="5.08"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
+<junction x="63.5" y="5.08"/>
 </segment>
 </net>
 </nets>
@@ -3663,6 +3708,32 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <pinref part="IC2" gate="MCU" pin="PB1"/>
 <wire x1="106.68" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
 <label x="99.06" y="-58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_DONE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD8"/>
+<wire x1="96.52" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="99.06" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CHARGE" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD9"/>
+<wire x1="106.68" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<label x="99.06" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD10"/>
+<wire x1="106.68" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="IC2" gate="MCU" pin="PD11"/>
+<wire x1="106.68" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
