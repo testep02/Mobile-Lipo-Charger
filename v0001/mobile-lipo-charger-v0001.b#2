@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -1421,11 +1421,11 @@ design rules under a new name.</description>
 <wire x1="9.906" y1="105.41" x2="33.793" y2="95.687" width="0" layer="19" extent="1-1"/>
 <wire x1="7.366" y1="105.41" x2="9.906" y2="105.41" width="0" layer="19" extent="1-1"/>
 <wire x1="2.286" y1="105.41" x2="7.366" y2="105.41" width="0" layer="19" extent="1-1"/>
-<wire x1="36.322" y1="23.38" x2="37.58" y2="51.943" width="0" layer="19" extent="1-1"/>
+<wire x1="36.322" y1="24.523" x2="37.58" y2="51.943" width="0" layer="19" extent="1-1"/>
 <wire x1="28.517" y1="13.589" x2="29.525" y2="17.987" width="0" layer="19" extent="1-1"/>
 <wire x1="17.145" y1="24.523" x2="30.025" y2="23.749" width="0" layer="19" extent="1-1"/>
 <wire x1="7.943" y1="13.589" x2="8.951" y2="17.987" width="0" layer="19" extent="1-1"/>
-<wire x1="52.04" y1="16.042" x2="36.322" y2="23.38" width="0" layer="19" extent="1-1"/>
+<wire x1="52.04" y1="16.042" x2="36.322" y2="24.523" width="0" layer="19" extent="1-1"/>
 <wire x1="71.15" y1="16.042" x2="52.04" y2="16.042" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT+">
@@ -1730,8 +1730,8 @@ design rules under a new name.</description>
 <wire x1="16.364884375" y1="75.42721875" x2="27.3250375" y2="83.9125" width="0" layer="19" extent="1-1"/>
 <wire x1="7.862" y1="59.182" x2="23.981134375" y2="63.005475" width="0" layer="19" extent="1-1"/>
 <wire x1="12.446" y1="105.41" x2="28.10993125" y2="87.2542875" width="0" layer="19" extent="1-1"/>
-<wire x1="16.184" y1="30.861" x2="7.862" y2="59.182" width="0" layer="19" extent="1-1"/>
-<wire x1="7.943" y1="12.319" x2="12.7" y2="24.88" width="0" layer="19" extent="1-1"/>
+<wire x1="12.26" y1="28.575" x2="7.862" y2="59.182" width="0" layer="19" extent="1-1"/>
+<wire x1="7.943" y1="12.319" x2="14.351" y2="26.023" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT2_CHARGE">
 <contactref element="U2" pad="7"/>
@@ -2086,7 +2086,35 @@ design rules under a new name.</description>
 <via x="28.321" y="20.701" extent="1-16" drill="0.35"/>
 <via x="28.8925" y="20.1295" extent="1-16" drill="0.35"/>
 <via x="28.321" y="19.558" extent="1-16" drill="0.35"/>
-<wire x1="28.321" y1="20.701" x2="28.634" y2="28.575" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="2">
+<vertex x="28.067" y="19.177"/>
+<vertex x="27.813" y="19.431"/>
+<vertex x="27.813" y="25.527"/>
+<vertex x="27.559" y="25.781"/>
+<vertex x="27.559" y="31.115"/>
+<vertex x="29.591" y="31.115"/>
+<vertex x="29.591" y="25.781"/>
+<vertex x="29.337" y="25.527"/>
+<vertex x="29.337" y="19.431"/>
+<vertex x="29.083" y="19.177"/>
+<vertex x="28.956" y="19.05"/>
+<vertex x="28.194" y="19.05"/>
+</polygon>
+<via x="29.083" y="26.543" extent="1-16" drill="0.254"/>
+<via x="28.575" y="27.051" extent="1-16" drill="0.254"/>
+<via x="28.067" y="26.543" extent="1-16" drill="0.254"/>
+<via x="28.067" y="27.559" extent="1-16" drill="0.254"/>
+<via x="29.083" y="27.559" extent="1-16" drill="0.254"/>
+<via x="28.575" y="28.067" extent="1-16" drill="0.254"/>
+<via x="28.067" y="28.575" extent="1-16" drill="0.254"/>
+<via x="29.083" y="28.575" extent="1-16" drill="0.254"/>
+<via x="28.575" y="29.083" extent="1-16" drill="0.254"/>
+<via x="28.067" y="29.591" extent="1-16" drill="0.254"/>
+<via x="29.083" y="29.591" extent="1-16" drill="0.254"/>
+<via x="28.575" y="30.099" extent="1-16" drill="0.254"/>
+<via x="28.067" y="30.607" extent="1-16" drill="0.254"/>
+<via x="29.083" y="30.607" extent="1-16" drill="0.254"/>
+<wire x1="29.083" y1="28.575" x2="28.634" y2="28.575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBST2">
 <contactref element="U4" pad="6"/>

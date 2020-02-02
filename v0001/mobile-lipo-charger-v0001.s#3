@@ -666,6 +666,18 @@
 <text x="-4.5" y="6.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5" y="-8" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="6X6">
+<smd name="1" x="-2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
+<smd name="2" x="2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
+<text x="-3" y="3.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.8" size="1.27" layer="25">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIO5158">
@@ -1165,6 +1177,15 @@ to 125°C junction temperature.</description>
 </technologies>
 </device>
 <device name="10X10" package="10X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6X6" package="6X6">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2645,7 +2666,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="C22" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="C23" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH">
+<part name="L1" library="common" deviceset="INDUCTOR" device="6X6" value="2.2uH">
 <attribute name="MANUFACTURER" value="Wurth"/>
 <attribute name="PART-NUM" value="7440660022"/>
 </part>
@@ -2663,6 +2684,13 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="L2" library="common" deviceset="INDUCTOR" device="10X10" value="3.3uH"/>
 <part name="C30" library="common" deviceset="CAP" device="0603L3" value="22u"/>
 <part name="C31" library="common" deviceset="CAP" device="0603L3" value="22u"/>
+<<<<<<< HEAD
+<part name="R13" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="R14" library="common" deviceset="RES" device="0603L3" value="1.5k"/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
+=======
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </parts>
 <sheets>
 <sheet>
@@ -3052,22 +3080,36 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="U1" gate="G$1" x="63.5" y="45.72" smashed="yes">
 <attribute name="NAME" x="53.34" y="25.4" size="1.27" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="25.4" y="63.5" smashed="yes">
-<attribute name="NAME" x="26.416" y="64.008" size="1.778" layer="95"/>
-<attribute name="VALUE" x="26.416" y="58.674" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="45.72" y="63.5" smashed="yes">
+<attribute name="NAME" x="46.736" y="64.008" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.736" y="58.674" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="91.44" y="45.72" smashed="yes">
 <attribute name="NAME" x="92.456" y="46.228" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.456" y="40.894" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="25.4" y="55.88" smashed="yes">
-<attribute name="VALUE" x="22.86" y="53.34" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="45.72" y="55.88" smashed="yes">
+<attribute name="VALUE" x="43.18" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="91.44" y="38.1" smashed="yes">
 <attribute name="VALUE" x="88.9" y="35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="63.5" y="20.32" smashed="yes">
 <attribute name="VALUE" x="60.96" y="17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="R13" gate="G$1" x="30.48" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.956" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.528" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R14" gate="G$1" x="22.86" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.336" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="25.908" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY6" gate="VDD" x="22.86" y="58.42" smashed="yes">
+<attribute name="VALUE" x="22.86" y="61.214" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY7" gate="VDD" x="30.48" y="58.42" smashed="yes">
+<attribute name="VALUE" x="30.48" y="61.214" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -3114,15 +3156,43 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <net name="BATT1_CHARGE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="#CHARGE"/>
-<wire x1="38.1" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
 <label x="33.02" y="45.72" size="1.778" layer="95"/>
+<wire x1="48.26" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="48.26" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATT1_DONE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="#DONE"/>
-<wire x1="38.1" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <label x="33.02" y="40.64" size="1.778" layer="95"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VIN_CHARGER" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="40.64" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<junction x="45.72" y="68.58"/>
+<label x="48.26" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="SUPPLY6" gate="VDD" pin="VDD"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="SUPPLY7" gate="VDD" pin="VDD"/>
+<wire x1="30.48" y1="58.42" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_CHARGER" class="0">

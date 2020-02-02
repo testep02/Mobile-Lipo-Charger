@@ -578,8 +578,6 @@
 <text x="-0.875" y="1.75" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.889" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<<<<<<< HEAD
-=======
 <package name="L1213">
 <smd name="1" x="-5.55" y="0" dx="3.1" dy="5" layer="1"/>
 <smd name="2" x="5.55" y="0" dx="3.1" dy="5" layer="1"/>
@@ -668,7 +666,6 @@
 <text x="-4.5" y="6.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5" y="-8" size="1.27" layer="27">&gt;VALUE</text>
 </package>
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </packages>
 <symbols>
 <symbol name="DIO5158">
@@ -768,8 +765,6 @@
 <text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-3.556" y="-0.508" size="1.016" layer="97">TPS564201</text>
 </symbol>
-<<<<<<< HEAD
-=======
 <symbol name="INDUCTOR">
 <wire x1="0" y1="0" x2="-0.762" y2="0" width="0.127" layer="94" curve="-180"/>
 <wire x1="0.762" y1="0" x2="0" y2="0" width="0.127" layer="94" curve="-180"/>
@@ -784,7 +779,6 @@
 <text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.556" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </symbols>
 <devicesets>
 <deviceset name="DIO5158" prefix="U" uservalue="yes">
@@ -1111,8 +1105,6 @@ to 125°C junction temperature.</description>
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
-=======
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -1183,7 +1175,6 @@ to 125°C junction temperature.</description>
 </device>
 </devices>
 </deviceset>
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -2647,20 +2638,17 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2"/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
-<<<<<<< HEAD
-<part name="U3" library="common" deviceset="TPS564201" device=""/>
-=======
 <part name="U3" library="common" deviceset="TPS564201" device="" value="3.3V"/>
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <part name="C21" library="common" deviceset="CAP" device="0603L3" value="100n"/>
 <part name="R9" library="common" deviceset="RES" device="0402L3" value="33.2k"/>
 <part name="R10" library="common" deviceset="RES" device="0402L3" value="10k"/>
 <part name="C22" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="C23" library="common" deviceset="CAP" device="1206L3" value="10u"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH"/>
 <<<<<<< HEAD
 =======
-<part name="L1" library="common" deviceset="INDUCTOR" device="10X10" value="2.2uH"/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 >>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </parts>
 <sheets>
@@ -2696,32 +2684,26 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <instance part="GND28" gate="1" x="2.54" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="0" y="-22.86" size="1.778" layer="96"/>
 </instance>
-<<<<<<< HEAD
-=======
 <instance part="L1" gate="G$1" x="38.1" y="5.08" smashed="yes">
 <attribute name="NAME" x="35.56" y="6.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="1.524" size="1.778" layer="96"/>
+</instance>
+<<<<<<< HEAD
+=======
+<instance part="SUPPLY5" gate="VDD" x="45.72" y="7.62" smashed="yes">
+<attribute name="VALUE" x="45.72" y="10.414" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 >>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </instances>
 <busses>
 </busses>
 <nets>
-<<<<<<< HEAD
-<net name="N$6" class="0">
-=======
 <net name="SW" class="0">
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <segment>
 <pinref part="U3" gate="G$1" pin="SW"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="5.08" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<<<<<<< HEAD
-</segment>
-</net>
-<net name="N$7" class="0">
-=======
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="5.08" x2="35.56" y2="5.08" width="0.1524" layer="91"/>
 <junction x="27.94" y="5.08"/>
@@ -2729,7 +2711,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 </segment>
 </net>
 <net name="VBST" class="0">
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <segment>
 <pinref part="U3" gate="G$1" pin="VBST"/>
 <wire x1="15.24" y1="2.54" x2="22.86" y2="2.54" width="0.1524" layer="91"/>
@@ -2737,16 +2718,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="-7.62" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-7.62" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
-<<<<<<< HEAD
-</segment>
-</net>
-<net name="N$10" class="0">
-=======
 <label x="17.78" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VFB" class="0">
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -2759,10 +2734,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VFB"/>
 <wire x1="20.32" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
-<<<<<<< HEAD
-=======
 <label x="17.78" y="-2.54" size="1.778" layer="95"/>
->>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </segment>
 </net>
 <net name="BATT+" class="0">
@@ -2807,14 +2779,21 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf<
 <junction x="2.54" y="-15.24"/>
 </segment>
 </net>
+<<<<<<< HEAD
 <net name="N$14" class="0">
+=======
+<net name="VDD" class="0">
+>>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="5.08" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
-<<<<<<< HEAD
-=======
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<<<<<<< HEAD
+=======
+<pinref part="SUPPLY5" gate="VDD" pin="VDD"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<junction x="45.72" y="5.08"/>
 >>>>>>> e328c7b82f0ddb8448faede392224bf2b930baa6
 </segment>
 </net>
