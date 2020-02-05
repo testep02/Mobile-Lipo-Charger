@@ -7968,8 +7968,18 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="100n"/>
 <part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="100n"/>
 <part name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="100n"/>
-<part name="C3" library="common" deviceset="CAP" device="0603L3" value="2.2u"/>
-<part name="C4" library="common" deviceset="CAP" device="0603L3" value="2.2u"/>
+<part name="C3" library="common" deviceset="CAP" device="0805L3" value="2.2u">
+<attribute name="DATASHEET" value="https://www.mouser.com/datasheet/2/40/TAJ_LOW_PROFILE-932651.pdf"/>
+<attribute name="MANUFACTURER" value="AVX"/>
+<attribute name="PART-NUM" value="581-TAJR225K016RNJ"/>
+<attribute name="VENDOR" value="mouser.com"/>
+</part>
+<part name="C4" library="common" deviceset="CAP" device="0805L3" value="2.2u">
+<attribute name="DATASHEET" value="https://www.mouser.com/datasheet/2/40/TAJ_LOW_PROFILE-932651.pdf"/>
+<attribute name="MANUFACTURER" value="AVX"/>
+<attribute name="PART-NUM" value="581-TAJR225K016RNJ"/>
+<attribute name="VENDOR" value="mouser.com"/>
+</part>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q2" library="my_dac_amp" deviceset="CRYSTAL" device="HC49US"/>
@@ -7988,13 +7998,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C8" library="common" deviceset="CAP" device="0402L3" value="100n"/>
-<part name="C9" library="common" deviceset="CAP" device="0603L3" value="1u"/>
+<part name="C9" library="common" deviceset="CAP" device="0805L3" value="1u"/>
 <part name="FB1" library="common" deviceset="FERRITE" device="0603L3"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="C10" library="common" deviceset="CAP" device="0603L3" value="1u"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C11" library="common" deviceset="CAP" device="0402L3" value="100n"/>
-<part name="C18" library="common" deviceset="CAP" device="0603L3" value="1u"/>
+<part name="C18" library="common" deviceset="CAP" device="0805L3" value="1u"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X5" device="" package3d_urn="urn:adsk.eagle:package:22470/2"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
@@ -8749,56 +8759,56 @@ Source: AVX .. aphvc.pdf</description>
 <nets>
 <net name="I_POT_SCLK" class="0">
 <segment>
-<wire x1="63.5" y1="-76.2" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
-<label x="63.5" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="116.84" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
+<label x="99.06" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I_POT_SDO" class="0">
 <segment>
-<wire x1="66.04" y1="-91.44" x2="66.04" y2="-76.2" width="0.1524" layer="91"/>
-<label x="66.04" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
+<label x="99.06" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I_POT_SDI" class="0">
 <segment>
-<wire x1="68.58" y1="-91.44" x2="68.58" y2="-76.2" width="0.1524" layer="91"/>
-<label x="68.58" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
+<label x="99.06" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATT2_V" class="0">
 <segment>
-<wire x1="53.34" y1="-91.44" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
-<label x="53.34" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<label x="99.06" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMS_SWDIO" class="0">
 <segment>
-<wire x1="83.82" y1="-91.44" x2="83.82" y2="-76.2" width="0.1524" layer="91"/>
-<label x="83.82" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<label x="99.06" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TCK_SWCLK" class="0">
 <segment>
-<wire x1="86.36" y1="-91.44" x2="86.36" y2="-76.2" width="0.1524" layer="91"/>
-<label x="86.36" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="22.86" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
+<label x="99.06" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATT1_V" class="0">
 <segment>
-<wire x1="55.88" y1="-91.44" x2="55.88" y2="-76.2" width="0.1524" layer="91"/>
-<label x="55.88" y="-93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="101.6" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<label x="99.06" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATT2_CE" class="0">
 <segment>
-<wire x1="106.68" y1="-60.96" x2="96.52" y2="-60.96" width="0.1524" layer="91"/>
-<label x="99.06" y="-60.96" size="1.778" layer="95"/>
+<wire x1="106.68" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
+<label x="99.06" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATT1_CE" class="0">
 <segment>
-<wire x1="106.68" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
-<label x="99.06" y="-58.42" size="1.778" layer="95"/>
+<wire x1="106.68" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
+<label x="99.06" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATT1_DONE" class="0">
@@ -9416,10 +9426,18 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C3" gate="G$1" x="-170.18" y="-55.88" smashed="yes">
 <attribute name="NAME" x="-169.164" y="-55.372" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-169.164" y="-60.706" size="1.778" layer="96"/>
+<attribute name="DATASHEET" x="-170.18" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="-170.18" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="PART-NUM" x="-170.18" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="-170.18" y="-55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C4" gate="G$1" x="-177.8" y="-55.88" smashed="yes">
 <attribute name="NAME" x="-176.784" y="-55.372" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-176.784" y="-60.706" size="1.778" layer="96"/>
+<attribute name="DATASHEET" x="-177.8" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="-177.8" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="PART-NUM" x="-177.8" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="VENDOR" x="-177.8" y="-55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="-177.8" y="-63.5" smashed="yes">
 <attribute name="VALUE" x="-180.34" y="-66.04" size="1.778" layer="96"/>
@@ -10085,12 +10103,20 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-226.06" y1="101.6" x2="-208.28" y2="101.6" width="0.1524" layer="91"/>
 <label x="-220.98" y="101.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-236.22" y1="40.64" x2="-220.98" y2="40.64" width="0.1524" layer="91"/>
+<label x="-238.76" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TCK_SWCLK" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="4"/>
 <wire x1="-208.28" y1="99.06" x2="-226.06" y2="99.06" width="0.1524" layer="91"/>
 <label x="-220.98" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-236.22" y1="38.1" x2="-220.98" y2="38.1" width="0.1524" layer="91"/>
+<label x="-238.76" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10099,6 +10125,72 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="-162.56" y1="-22.86" x2="-193.04" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-193.04" y1="-22.86" x2="-193.04" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="I_POT_SCLK" class="0">
+<segment>
+<wire x1="-220.98" y1="48.26" x2="-236.22" y2="48.26" width="0.1524" layer="91"/>
+<label x="-238.76" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I_POT_SDO" class="0">
+<segment>
+<wire x1="-236.22" y1="45.72" x2="-220.98" y2="45.72" width="0.1524" layer="91"/>
+<label x="-238.76" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I_POT_SDI" class="0">
+<segment>
+<wire x1="-236.22" y1="43.18" x2="-220.98" y2="43.18" width="0.1524" layer="91"/>
+<label x="-238.76" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT2_V" class="0">
+<segment>
+<wire x1="-236.22" y1="53.34" x2="-220.98" y2="53.34" width="0.1524" layer="91"/>
+<label x="-238.76" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_V" class="0">
+<segment>
+<wire x1="-236.22" y1="50.8" x2="-220.98" y2="50.8" width="0.1524" layer="91"/>
+<label x="-238.76" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT2_CE" class="0">
+<segment>
+<wire x1="-231.14" y1="55.88" x2="-241.3" y2="55.88" width="0.1524" layer="91"/>
+<label x="-238.76" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CE" class="0">
+<segment>
+<wire x1="-231.14" y1="58.42" x2="-241.3" y2="58.42" width="0.1524" layer="91"/>
+<label x="-238.76" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_DONE" class="0">
+<segment>
+<wire x1="-241.3" y1="60.96" x2="-231.14" y2="60.96" width="0.1524" layer="91"/>
+<label x="-238.76" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT1_CHARGE" class="0">
+<segment>
+<wire x1="-231.14" y1="63.5" x2="-241.3" y2="63.5" width="0.1524" layer="91"/>
+<label x="-238.76" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT2_DONE" class="0">
+<segment>
+<wire x1="-231.14" y1="66.04" x2="-241.3" y2="66.04" width="0.1524" layer="91"/>
+<label x="-238.76" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BATT2_CHARGE" class="0">
+<segment>
+<wire x1="-231.14" y1="68.58" x2="-241.3" y2="68.58" width="0.1524" layer="91"/>
+<label x="-238.76" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
