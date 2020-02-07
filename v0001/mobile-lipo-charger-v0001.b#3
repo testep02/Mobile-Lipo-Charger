@@ -3951,60 +3951,6 @@ design rules under a new name.</description>
 <signal name="TFT_DE">
 <contactref element="J1" pad="14"/>
 </signal>
-<signal name="TFT_DB17">
-<contactref element="J1" pad="15"/>
-</signal>
-<signal name="TFT_DB16">
-<contactref element="J1" pad="16"/>
-</signal>
-<signal name="TFT_DB15">
-<contactref element="J1" pad="17"/>
-</signal>
-<signal name="TFT_DB14">
-<contactref element="J1" pad="18"/>
-</signal>
-<signal name="TFT_DB13">
-<contactref element="J1" pad="19"/>
-</signal>
-<signal name="TFT_DB12">
-<contactref element="J1" pad="20"/>
-</signal>
-<signal name="TFT_DB11">
-<contactref element="J1" pad="21"/>
-</signal>
-<signal name="TFT_DB10">
-<contactref element="J1" pad="22"/>
-</signal>
-<signal name="TFT_DB9">
-<contactref element="J1" pad="23"/>
-</signal>
-<signal name="TFT_DB8">
-<contactref element="J1" pad="24"/>
-</signal>
-<signal name="TFT_DB7">
-<contactref element="J1" pad="25"/>
-</signal>
-<signal name="TFT_DB6">
-<contactref element="J1" pad="26"/>
-</signal>
-<signal name="TFT_DB5">
-<contactref element="J1" pad="27"/>
-</signal>
-<signal name="TFT_DB4">
-<contactref element="J1" pad="28"/>
-</signal>
-<signal name="TFT_DB3">
-<contactref element="J1" pad="29"/>
-</signal>
-<signal name="TFT_DB2">
-<contactref element="J1" pad="30"/>
-</signal>
-<signal name="TFT_DB1">
-<contactref element="J1" pad="31"/>
-</signal>
-<signal name="TFT_DB0">
-<contactref element="J1" pad="32"/>
-</signal>
 <signal name="TFT_SDO">
 <contactref element="J1" pad="33"/>
 </signal>
@@ -4128,57 +4074,93 @@ design rules under a new name.</description>
 </signal>
 <signal name="R2">
 <contactref element="IC5" pad="B14"/>
+<contactref element="J1" pad="20"/>
+<wire x1="39.541" y1="12.735" x2="14.4" y2="76.8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="R3">
 <contactref element="IC5" pad="R5"/>
+<contactref element="J1" pad="19"/>
+<wire x1="39.041" y1="12.735" x2="24.8" y2="69.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="R4">
 <contactref element="IC5" pad="C15"/>
+<contactref element="J1" pad="18"/>
+<wire x1="38.541" y1="12.735" x2="15.2" y2="77.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="R5">
 <contactref element="IC5" pad="B15"/>
+<contactref element="J1" pad="17"/>
+<wire x1="38.041" y1="12.735" x2="14.4" y2="77.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="R6">
 <contactref element="IC5" pad="R4"/>
+<contactref element="J1" pad="16"/>
+<wire x1="37.541" y1="12.735" x2="24.8" y2="68.8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="R7">
 <contactref element="IC5" pad="J15"/>
+<contactref element="J1" pad="15"/>
+<wire x1="37.041" y1="12.735" x2="20" y2="77.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G2">
 <contactref element="IC5" pad="P3"/>
+<contactref element="J1" pad="26"/>
+<wire x1="42.541" y1="12.735" x2="24" y2="68" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G3">
 <contactref element="IC5" pad="C8"/>
+<contactref element="J1" pad="25"/>
+<wire x1="42.041" y1="12.735" x2="15.2" y2="72" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G4">
 <contactref element="IC5" pad="P12"/>
+<contactref element="J1" pad="24"/>
+<wire x1="41.541" y1="12.735" x2="24" y2="75.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G5">
 <contactref element="IC5" pad="R13"/>
+<contactref element="J1" pad="23"/>
+<wire x1="41.041" y1="12.735" x2="24.8" y2="76" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G6">
 <contactref element="IC5" pad="G15"/>
+<contactref element="J1" pad="22"/>
+<wire x1="40.541" y1="12.735" x2="18.4" y2="77.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="G7">
 <contactref element="IC5" pad="C11"/>
+<contactref element="J1" pad="21"/>
+<wire x1="40.041" y1="12.735" x2="15.2" y2="74.4" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B2">
 <contactref element="IC5" pad="B11"/>
+<contactref element="J1" pad="32"/>
+<wire x1="45.541" y1="12.735" x2="14.4" y2="74.4" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B3">
 <contactref element="IC5" pad="B8"/>
+<contactref element="J1" pad="31"/>
+<wire x1="45.041" y1="12.735" x2="14.4" y2="72" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B4">
 <contactref element="IC5" pad="C7"/>
+<contactref element="J1" pad="30"/>
+<wire x1="44.541" y1="12.735" x2="15.2" y2="71.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B5">
 <contactref element="IC5" pad="R2"/>
+<contactref element="J1" pad="29"/>
+<wire x1="44.041" y1="12.735" x2="24.8" y2="67.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B6">
 <contactref element="IC5" pad="A7"/>
+<contactref element="J1" pad="28"/>
+<wire x1="43.541" y1="12.735" x2="13.6" y2="71.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="B7">
 <contactref element="IC5" pad="B4"/>
+<contactref element="J1" pad="27"/>
+<wire x1="43.041" y1="12.735" x2="14.4" y2="68.8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VSYNC">
 <contactref element="IC5" pad="N4"/>
